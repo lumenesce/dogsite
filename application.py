@@ -5,7 +5,7 @@ from flask import Flask, render_template
 import requests
 import json
 
-app = Flask(__name__)
+application = Flask(__name__)
 
 def get_img():
     url = "https://dog.ceo/api/breeds/image/random"
@@ -14,9 +14,9 @@ def get_img():
     return dog_img
 
 
-@app.route("/")
+@application.route("/")
 def index():
     dog_img = get_img()
     return render_template("index.html", dog_img=dog_img)
 
-app.run(host="0.0.0.0", port=80, debug=True)
+application.run(host="0.0.0.0", port=80, debug=True)

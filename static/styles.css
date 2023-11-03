@@ -1,11 +1,9 @@
 body {
-     /* Replace with the path to your background image */
     background-color: #333333; /* Used if the image is unavailable */
-    background-repeat: repeat;
-    background-position: center center; /* Centers the image */
-    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-attachment: fixed; */
     background-size: cover; /* Ensures the image covers the whole screen */
-    /* opacity: 0.5; */
 }
 
 body::after {
@@ -16,34 +14,31 @@ body::after {
     left: 0;
     right: 0;
     bottom: 0;
-    /* background: url('path-to-your-image.jpg') center center no-repeat; */
     background-size: cover;
     opacity: 0.5; /* Adjust the opacity as needed */
     z-index: -1;
 }
 
-/* body {
-    background-color: #333333;
-    background-repeat: no-repeat;
-    background-position: top-left;
-    background-attachment:fixed;
-} */
-
 h1 {
     text-align: center;
-    font-family: Georgia, sans-serif;
+    font-family: courier, sans-serif;
     color:#ffffff;
-    /* background-color: #000000; */
+}
+
+h2 {
+    text-align: center;
+    font-family: courier, serif;
+    font-weight: bold;
+    color:#ffffff;
 }
 
 p {
     text-align: center;
-    font-family: Georgia, serif;
+    font-family: courier, sans-serif;
     font-size: 24px;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     color: #ffffff;
-    /* background-color:#000000; */
 }
 
 .link-box {
@@ -51,25 +46,33 @@ p {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #444; /* Your background color */
     border-radius: 10px; /* Rounded corners */
-    padding: 10px 20px; /* Padding inside the box */
-
+    padding: 30px 30px 10px 30px;
     display: inline-block;
-    margin: 10px;
-    /* padding: 10px; */
-    background-color: #444; /* Or any color you prefer */
+    margin: 20px;
+    background-color: #0005;
     text-align: center;
-    opacity: 0.5;
-}
-
-.link-box a {
-    color: #56B4E9;
-    text-decoration: none;
-    transition: color 0.3s;
+    font: Georgia
 }
 
 .link-box:hover, .link-box:focus {
-    background-color: #FED136;
+    background-color: #aaaa;
     transition: color 1s;
+}
+
+.dog_img {
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 500em; /* Adjust this value to set your desired maximum width */
+    max-height: 500px; /* Adjust this value to set your desired maximum height */
+    display: block; /* To center the image if needed */
+    margin: auto; /* To center the image horizontally if display is block */
+    position: center center;
+}
+
+.gh-logo {
+    /* width: "5px";
+    height: "5px"; */
+    /* padding: 10px; */
+    border: 10px;
 }
