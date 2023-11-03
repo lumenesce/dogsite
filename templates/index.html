@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dogsite :)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="refresh" content="30"/>
+<style>
+    body::after {
+        background-image: url('{{dog_img}}');
+    }
+</style>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+
+
+<body>
+    <h1>A website to get your dog image fix! 🐕‍🦺🐕‍🦺</h1>
+    <p>This will refresh every 30 seconds!</p>
+    <p><img src="{{dog_img}}"></p>
+
+    <!-- <footer> -->
+        <a href="YOUR_GITHUB_REPO_LINK"><div class="link-box"></a>
+            <p>Check out the source code on GitHub.</p>
+        </div>
+    <!-- </footer> -->
+</body>
+
+</html>
