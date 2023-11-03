@@ -19,4 +19,9 @@ def index():
     dog_img = get_img()
     return render_template("index.html", dog_img=dog_img)
 
-application.run(host="0.0.0.0", port=80, debug=True)
+if __name__ == '__main__':
+    # for elastic beanstalk
+    application.run()
+
+    # for local debugging
+    # application.run(host="0.0.0.0", port=80, debug=True)
